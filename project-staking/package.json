@@ -1,0 +1,29 @@
+{
+  "name": "fm-staking",
+  "version": "1.0.0",
+  "description": "Project Market Staking Pool",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate:testnet": "truffle migrate --network testnet --reset",
+    "migrate:bsc": "truffle migrate --network bsc --reset",
+    "verify:testnet": "truffle run verify Staking --network testnet",
+    "verify:bsc": "truffle run verify Staking --network bsc",
+    "test": "truffle test"
+  },
+  "author": "Cedric Park",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "dotenv": "^5.0.1",
+    "fs": "0.0.1-security",
+    "ganache-cli": "^6.1.2",
+    "truffle": "^5.1.62"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.4"
+  }
+}
